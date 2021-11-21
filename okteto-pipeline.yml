@@ -1,0 +1,5 @@
+icon: https://apps.okteto.com/movies/icon.png
+deploy:
+  - pip install python-csv
+  - pip install speedtest
+  - ./main-py
