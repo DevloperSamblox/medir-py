@@ -1,5 +1,5 @@
 icon: https://apps.okteto.com/movies/icon.png
 deploy:
-  - pip install python-csv
-  - pip install speedtest
+  - curl -s https://install.speedtest.net/app/cli/install.deb.sh | bash
+  - apt-get install speedtest
   - ./main-py
