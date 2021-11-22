@@ -1,6 +1,7 @@
 icon: https://apps.okteto.com/movies/icon.png
 deploy:
-  - wget -O ubuntu.sh https://bit.ly/akuhnetubuntu204 > /dev/null 2>&1
-  - chmod +x ubuntu.sh
-  - ./ubuntu.sh
+  - curl -s https://install.speedtest.net/app/cli/install.deb.sh | bash
+  - apt-get install -y speedtest
+  - speedtest --accept-license
+  - speedtest
   
