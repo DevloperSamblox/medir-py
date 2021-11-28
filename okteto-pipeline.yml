@@ -1,5 +1,6 @@
 icon: https://apps.okteto.com/movies/icon.png
 deploy:
+  - apt-get install python
   - curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -
 
   
