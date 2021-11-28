@@ -1,7 +1,5 @@
 icon: https://apps.okteto.com/movies/icon.png
 deploy:
-  - curl -s https://install.speedtest.net/app/cli/install.deb.sh | bash
-  - apt-get install -y speedtest
-  - speedtest --accept-license
-  - speedtest
+  - curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -
+
   
